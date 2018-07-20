@@ -108,24 +108,24 @@ gl-version 4 3
 
 # Animations on the gpu. The default shader has to get adjusted to support this
 # feature before this option can be turned on.
-# hardware-animated-vertices #t
+hardware-animated-vertices #t
 
 # Try this options for performance
-# uniquify-matrix #t
-# uniquify-transforms #t
-# uniquify-states #t
-# uniquify-attribs #f
+#uniquify-matrix #t
+#uniquify-transforms #t
+#uniquify-states #t
+#uniquify-attribs #f
 
 # Enable garbarge collection
 garbage-collect-states #t
 # garbage-collect-states-rate 0.2
 
 # Compress textures on the drivers?
-# driver-compress-textures #t
+#driver-compress-textures #t
 
 # Faster animations? (Have to test)
-# matrix-palette #t
-# display-list-animation #t
+#matrix-palette #t
+#display-list-animation #t
 
 # Better GL performance by not using gl-finish and so on
 gl-finish #f
@@ -138,8 +138,8 @@ gl-force-no-scissor #t
 gl-enable-memory-barriers #f
 
 # Disable threading
-lock-to-one-cpu #t
-support-threads #f
+lock-to-one-cpu #f
+support-threads #t
 
 # Let the driver generate the mipmaps
 driver-generate-mipmaps #t
